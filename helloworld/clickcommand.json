@@ -1,0 +1,18 @@
+{
+  "name": "print-name",
+  "description": "Show how ClickCommand works",
+  "envs": [
+    {
+      "key": "NAME",
+      "title": "My Name",
+      "default": "John"
+    },
+    {
+      "key": "UPPER",
+      "title": "Uppercase",
+      "default": false,
+      "help": "Enable uppercase name",
+      "uiType": "switch"
+    }
+  ]
+}
