@@ -1,0 +1,27 @@
+{
+  "name": "sys_info",
+  "description": "Print various system info for diagnosing",
+  "cmdList": [
+    {
+      "id": "env",
+      "description": "Print environment",
+      "envs": [
+        {
+          "id": "NAME",
+          "title": "My Name",
+          "default": "John"
+        },
+        {
+          "id": "UPPER",
+          "title": "Uppercase",
+          "default": false,
+          "help": "Enable uppercase name",
+          "uiType": "switch"
+        }
+      ]
+    },
+    {
+      "id": "all"
+    }
+  ]
+}
