@@ -1,0 +1,32 @@
+{
+  "name": "kubevpn",
+  "description": "KubeVPN is Cloud Native Dev Environment.",
+  "cmdList": [
+    {
+      "id": "help",
+      "description": "Get brief info.",
+      "envs": [
+        {
+          "id": "cmd",
+          "title": "KubeVpn Subcommand",
+          "default": "",
+          "required": false,
+          "help": "Fallback kubevpn if left empty"
+        }
+      ]
+    },
+    {
+      "id": "connect",
+      "description": "Connect to Kubernetes cluster network.",
+      "envs": [
+        {
+          "id": "kubeconfig",
+          "title": "KubeConfig File Path",
+          "default": "",
+          "required": false,
+          "help": "Fallback ~/.kube/config if left empty"
+        }
+      ]
+    }
+  ]
+}

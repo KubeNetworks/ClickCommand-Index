@@ -1,0 +1,19 @@
+{
+  "name": "kubectl",
+  "description": "kubectl communicates with a Kubernetes cluster's control plane, using the Kubernetes API.",
+  "cmdList": [
+    {
+      "id": "help",
+      "description": "Get brief help.",
+      "envs": [
+        {
+          "id": "cmd",
+          "title": "kubectl Subcommand",
+          "default": "",
+          "required": false,
+          "help": "Fallback kubectl if left empty"
+        }
+      ]
+    }
+  ]
+}
