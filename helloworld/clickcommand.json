@@ -1,18 +1,41 @@
 {
-  "name": "print-name",
-  "description": "Show how ClickCommand works",
-  "envs": [
+  "name": "helloworld",
+  "description": "Say hello to the world",
+  "cmdList": [
     {
-      "key": "NAME",
-      "title": "My Name",
-      "default": "John"
+      "id": "main",
+      "description": "Print helloworld"
     },
     {
-      "key": "UPPER",
-      "title": "Uppercase",
-      "default": false,
-      "help": "Enable uppercase name",
-      "uiType": "switch"
+      "id": "hello",
+      "description": "Say hello to whoever",
+      "envs": [
+        {
+          "id": "name",
+          "title": "Your Name",
+          "default": "John",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "description": "Say hello to whoever",
+      "envs": [
+        {
+          "id": "name",
+          "title": "Your Name",
+          "default": "John",
+          "required": true
+        },
+        {
+          "id": "flag_news",
+          "title": "Bing News",
+          "default": true,
+          "help": "Show some Bing News for fun",
+          "uiType": "switch"
+        }
+      ]
     }
   ]
 }
